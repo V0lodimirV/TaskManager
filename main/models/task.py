@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import User
+from main.models.user import User
 
 from main.models.tag import Tag
 
