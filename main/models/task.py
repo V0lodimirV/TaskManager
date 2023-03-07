@@ -31,11 +31,10 @@ class Task(models.Model):
     state = models.CharField(max_length=255, choices=TASK_STATES, default=NEW_TASK)
     priority = models.IntegerField(default=0)
     author = models.ForeignKey(
-        User, related_name="authored_tasks", on_delete=models.CASCADE,
-        null=True)
+        User, related_name="authored_tasks", on_delete=models.CASCADE, null=True
+    )
     assigned = models.ForeignKey(
-        User, related_name="assigned_tasks", on_delete=models.PROTECT,
-        null=True
+        User, related_name="assigned_tasks", on_delete=models.PROTECT, null=True
     )
     tags = models.ManyToManyField(Tag)
 
