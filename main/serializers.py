@@ -5,15 +5,7 @@ from main.models import user, tag, task
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = user.User
-        fields = (
-            "id",
-            "username",
-            "first_name",
-            "last_name",
-            "email",
-            "date_of_birth",
-            "phone",
-        )
+        fields = "__all__"
 
 
 class TagSerializer(serializers.ModelSerializer):
@@ -37,5 +29,5 @@ class TaskSerializer(serializers.ModelSerializer):
             "priority",
             "author",
             "assigned",
-            "tags",
+            "tag",
         )
