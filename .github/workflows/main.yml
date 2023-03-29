@@ -5,10 +5,12 @@ on:
     branches:
       - 'develop'
       - 'feature'
+      - 'master'
   push:
     branches:
       - 'develop'
       - 'feature'
+      - 'master'
 
 jobs:
   build:
