@@ -20,9 +20,9 @@ jobs:
       - name: Run tests
       - uses: actions/setup-python@v1
 
-      - name: Unit tests
+      - name: Run tests
 
         env:
           COVERAGE: true
-          DJANGO_ENV: test
+          RAILS_ENV: test
         run: docker-compose --file docker-compose.ci.yml run --rm api make test
