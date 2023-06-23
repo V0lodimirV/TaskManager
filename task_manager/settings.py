@@ -58,10 +58,10 @@ MIDDLEWARE = [
 ]
 
 ROLLBAR = {
-    'access_token': "00c02401f8a64f6c906945f1ea7a1bcb",
-    'environment': 'development' if DEBUG else 'production',
-    'code_version': '1.0',
-    'root': BASE_DIR,
+    "access_token": "00c02401f8a64f6c906945f1ea7a1bcb",
+    "environment": "development" if DEBUG else "production",
+    "code_version": "1.0",
+    "root": BASE_DIR,
 }
 
 ROOT_URLCONF = "task_manager.urls"
@@ -157,5 +157,4 @@ REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
         "rest_framework_simplejwt.authentication.JWTAuthentication",
     ),
-
 }
