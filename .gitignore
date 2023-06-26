@@ -2,4 +2,9 @@ task_manager/__pycache__/
 main/__pycache__/
 main/migrations/__pycache__/
 main/models/__pycache__/
+<<<<<<< HEAD
 test/__pycache__/
+=======
+test/__pycache__/
+.coverage
+>>>>>>> 64f68c15f418e1346351b4776cc800321a666958
