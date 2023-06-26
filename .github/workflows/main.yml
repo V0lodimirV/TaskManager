@@ -3,10 +3,10 @@ name: Main
 on:
   pull_request:
     branches:
-      - 'develop'
+      - 'master'
   push:
     branches:
-      - 'develop'
+      - 'master'
 
 env:
   COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
